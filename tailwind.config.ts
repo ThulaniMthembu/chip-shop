@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss"
-import tailwindcssAnimate from "tailwindcss-animate";
+import type { Config } from 'tailwindcss'
+import animatePlugin from "tailwindcss-animate"
 
 const config: Config = {
   darkMode: ["class"],
@@ -9,7 +9,6 @@ const config: Config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -75,7 +74,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [animatePlugin],
 }
 
 export default config
